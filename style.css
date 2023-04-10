@@ -1,0 +1,117 @@
+.card {
+    border-radius: 100%;
+    background: #5e5c64;
+    box-shadow:  15px 15px 24px #413f45,
+             -15px -15px 24px #7b7983;
+   }
+
+   button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: #000000;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+.card{
+    padding:10%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+body{
+    background-color: #5e5c64;
+}
+
+main{
+    margin:10% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+h1{
+    white-space: nowrap;
+    font-family: 'Inconsolata', monospace;
+    font-size:50px;
+    color:white;
+}
+
+input{
+    margin:5% 0% 5% 0%;
+}
+
+button{
+    margin:10% 0% 5% 0%;
+    color:#ffffff;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container h1{
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #5e5c64;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    color:white
+  }
+  
+  .input:focus {
+    background-color: #5e5c64;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #7b7983;
+  }
